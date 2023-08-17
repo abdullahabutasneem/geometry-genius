@@ -41,29 +41,53 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Rectangle card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Rectangle</h2>
-                        <p>Area (A) = 0.5 x b x h</p>
+                        <p>Area (A) = w x l</p>
                         <p>
-                            <input type="text" class="border text-xl w-24 px-2" placeholder="base" name="" id="">
-                            <span class="ml-3">cm</span>
+                            <!-- Recytangle width -->
+                            <input type="text" class="border text-xl w-24 px-2 bg-gray-200" placeholder="width" name=""
+                                id="rectangle-width">
+                            <span class="ml-2">cm</span>
+
+                            <!-- Recytangle length -->
+                            <input type="text" class="border text-xl w-24 px-2 bg-gray-200 ml-4" placeholder="length"
+                                name="" id="rectangle-length">
+                            <span class="ml-2">cm</span>
                         </p>
+                        <p class="my-4 text-2xl">Area: <span id="rectangle-area"></span> <span id="cm-line"
+                                class="hidden">cm<sup>2</sup></span></p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!-- third card -->
+
+                <!-- Triangle card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
+                    <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area (A) = 0.5 x b x h</p>
+                        <p>
+                            <!-- triangle base  -->
+                            <input type="text" class="border text-xl w-24 px-2 bg-gray-200" placeholder="base" name=""
+                                id="triangle-base">
+                            <span class="ml-2">cm</span>
+
+                            <!-- triangle height -->
+                            <input type="text" class="border text-xl w-24 px-2 bg-gray-200 ml-4" placeholder="height"
+                                name="" id="triangle-height">
+                            <span class="ml-2">cm</span>
+                        </p>
+                        <p class="my-4 text-2xl">Area: <span id="triangle-area"></span> <span id="cm-line"
+                                class="hidden">cm<sup>2</sup></span></p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
